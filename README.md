@@ -68,3 +68,40 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+\
+
+
+
+
+
+
+
+
+
+ <div >
+        <img src={logo} alt="logo" className=' z-20 w-2/12 p-2 pl-3 ' />
+
+        <div className='bg-[rgba(0,0,0,0.8)] flex items-center '>
+           <Header />
+      
+      <div className='pr-10'>
+        <div className='flex'>
+        <img src={netav} alt="avatar"  className='w-[100px] p-2 cursor-pointer'/>
+        <div className='mt-7 '>
+        <RiArrowDownSLine className='text-white text-4xl cursor-pointer ' onClick={handlearrow} />
+
+        </div>
+        </div>
+
+        {
+         show &&(
+        <div className=' bg-gray-200 w-[120px] h-[80px]  absolute transition-all mt-2'>
+                <button className='p-3 bg-red-500 text-white ml-5 mt-2' onClick={handlesignout}>Sign Out</button>
+            </div>)
+        }
+
+        </div>
+         
+
+      </div>
+    </div>
